@@ -1,0 +1,14 @@
+begin
+#absolute url
+link_to('link to welcome', 'http://0.0.0.0:3000/welcome/index')
+#relative url
+link_to('link to welcome', '../../welcome/index')
+<%=4 + 4%>
+
+	<%=@our_names.each do |name| %>
+
+		Hi <%= name%>!!!!!%>
+<% 
+@my_names
+%>
+=end

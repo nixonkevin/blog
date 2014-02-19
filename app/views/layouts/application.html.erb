@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<img src="https://24.media.tumblr.com/26b19bfc3a8cc391e1d5d727e9b5f90a/tumblr_n0lp69ES2w1qd3lqvo1_1280.jpg" alt="Nix Sports" height="250" width="">
+
+
+
+	<h1 style="text-align:center;font-family:verdana;color:black;">Nix Sports</h1>
+
+	<% if @first_name %>
+
+<%= @first_name%>
+<%= @last_name%>
+
+<% else %>
+
+  <form method="post">
+
+  		<input type="text" name="firstname">
+
+  		<input type="text" name="lastname">
+
+  		<button type="submit">Submit Me!</button>
+
+  		<input
+  		name="authenticity_token"
+  		type="hidden"
+  		value="<%= form_authenticity_token %> ()" />
+<% end %>
+</form>
+<p><a href="/welcome">Welcome</a></p>
+<p><a href="/Bio"</a>Bio</p>
+<p><a href="/Contact">Contact</a></p>
+<p><a href="/Fantics">Fantics</a></p>
+<p><a href="/Greatest Damn Sports Show">Greatest Damn Sports</a></p>
+	<style>
+
+	<body style="background-color;white;center">
+
+
+<img src="">
+	</style>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+@ Nix Sports 2014
+</body>
+</html>
