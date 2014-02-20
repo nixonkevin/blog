@@ -1,6 +1,8 @@
 Blog::Application.routes.draw do
+  resources :users
+
   root "welcome#index"
-  resources :Users
+
   get "site/map"
   get "site/index"
   #get "contact/index"

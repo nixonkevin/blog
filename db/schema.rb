@@ -11,19 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140217234132) do
-
-  create_table "user_2s", force: true do |t|
-    t.string   "name"
-    t.string   "email_address"
-    t.string   "password"
-    t.string   "text"
-    t.integer  "age"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140220004608) do
 
   create_table "users", force: true do |t|
+    t.integer  "age"
+    t.string   "name"
+    t.text     "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
