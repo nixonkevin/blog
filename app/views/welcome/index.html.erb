@@ -1,15 +1,6 @@
 <body style="background-color:white;">
 
-<h1 style="text-align:center;font-family:verdana;color:black;">Welcome</h1>
-<img src="https://31.media.tumblr.com/15028b22023a85600afd3ac5b90fe468/tumblr_n0lp69ES2w1qd3lqvo2_1280.jpg" alt="Kevin's trying too hard.  He knew that camera was there." width="104" height="142">
-
-<img src="https://31.media.tumblr.com/c2e2c4a54f3020c09467a40807d70aad/tumblr_n0lp69ES2w1qd3lqvo7_1280.jpg"alt="Kevin in Brooklyn."
-<ul>
-  <li style="font-family:verdana;color:black;"><i>Technology</i></li>
-  <li style="font-family:verdana;color:black;">Sports</li>
-  <li style="font-family:verdana;color:black;">Travel</li>
-</ul>
-
+<h1 style="text-align:center;font-family:impact;color:black;">Welcome</h1>
 
 <% if @first_name %>
 
@@ -20,16 +11,23 @@
 
   <form method="post">
 
-  		<input type="text" name="firstname">
+     
+   First name:<input type="text" name="firstname">
+     
+   Last name:   <input type="text" name="lastname">
 
-  		<input type="text" name="lastname">
+      <button type="submit">Submit!</button>
 
-  		<button type="submit">Submit Me!</button>
-
-  		<input
-  		name="authenticity_token"
-  		type="hidden"
-  		value="<%= form_authenticity_token %> ()" />
+      <input
+      name="authenticity_token"
+      type="hidden"
+      value="<%= form_authenticity_token %> ()" />
 <% end %>
+
+<img src="https://31.media.tumblr.com/c2e2c4a54f3020c09467a40807d70aad/tumblr_n0lp69ES2w1qd3lqvo7_1280.jpg"alt="Kevin in Brooklyn."
+
+
+
+
 </form>
 

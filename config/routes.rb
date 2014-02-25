@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  get "fantics/index" => "fantics#index"
+  get "users/newest" => "users#newest"
   resources :users
 
   root "welcome#index"
@@ -16,6 +18,8 @@ Blog::Application.routes.draw do
   get "fantics" => "fantics#index"
   get "greatestdamnsports" => "greatestdamnsports#index"
   post "welcome" => "welcome#index"
+ 
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

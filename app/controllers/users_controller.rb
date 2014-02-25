@@ -7,6 +7,10 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def newest
+    @users = User.where(created_at: (Time.now-24.hours)..(Time.now))
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
